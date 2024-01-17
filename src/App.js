@@ -9,14 +9,6 @@ import apiRequest from "./apiRequest";
 function App() {
   const API_URL = "http://localhost:3500";
 
-  // const loadList = () => {
-  //   const storedList = localStorage.getItem("myShoppingList");
-  //   if (!storedList) return [];
-  //   const parsedList = JSON.parse(storedList);
-  //   if (!parsedList.length) return [];
-  //   return parsedList;
-  // };
-
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
